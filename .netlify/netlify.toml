@@ -1,0 +1,30 @@
+plugins = []
+functionsDirectory = "C:\\Users\\sugge\\Downloads\\MIRELLA_LAVAFLASH_V8.31_PANEL_CORREGIDO_LOGIN_WEB\\LAVAFLASH\\netlify\\functions"
+functionsDirectoryOrigin = "config-v1"
+headers = []
+redirects = []
+
+[functions]
+
+[functions."*"]
+
+[build]
+publish = "C:\\Users\\sugge\\Downloads\\MIRELLA_LAVAFLASH_V8.31_PANEL_CORREGIDO_LOGIN_WEB\\LAVAFLASH\\dist"
+publishOrigin = "config"
+commandOrigin = "config"
+command = "npm run build"
+functions = "C:\\Users\\sugge\\Downloads\\MIRELLA_LAVAFLASH_V8.31_PANEL_CORREGIDO_LOGIN_WEB\\LAVAFLASH\\netlify\\functions"
+
+[build.environment]
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]

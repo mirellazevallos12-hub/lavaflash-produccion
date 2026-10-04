@@ -1,0 +1,31 @@
+{
+  "name": "lavaflash-unificado",
+  "private": true,
+  "version": "8.31.0",
+  "scripts": {
+    "postinstall": "npm run setup",
+    "dev:web": "node scripts/dev.mjs",
+    "dev:admin": "npm run dev --prefix apps/admin",
+    "build:web": "npm run build --prefix apps/web",
+    "build:admin": "npm run build --prefix apps/admin",
+    "verify:dist": "node scripts/verify-dist.mjs",
+    "build": "npm run build:web && npm run build:admin && npm run verify:dist",
+    "preview:web": "npm run preview --prefix apps/web",
+    "dev": "node scripts/dev.mjs",
+    "check": "npm run check:source && npm run lint:admin && npm run check:api",
+    "lint:admin": "npm run lint --prefix apps/admin",
+    "dev:server": "node server/index.mjs",
+    "start": "node server/index.mjs",
+    "serve": "npm run build && npm start",
+    "test:admin": "node scripts/test-admin.mjs",
+    "setup": "npm install --prefix apps/web --no-fund --no-audit && npm install --prefix apps/admin --no-fund --no-audit",
+    "check:source": "node scripts/check-source.mjs",
+    "check:api": "node scripts/test-admin.mjs",
+    "check:production": "npm run check:source && npm run check:api",
+    "clean": "node scripts/clean.mjs",
+    "backup:data": "node scripts/backup-data.mjs"
+  },
+  "engines": {
+    "node": ">=22.16.0"
+  }
+}

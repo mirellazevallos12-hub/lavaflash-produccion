@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="50%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+    <linearGradient id="drumGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Background rounded squircle with safe margin for maskable icon -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+
+  <!-- Inner Washing Machine Body -->
+  <g filter="url(#shadow)" transform="translate(86, 66)">
+    <!-- Main white chassis -->
+    <rect x="0" y="0" width="340" height="380" rx="36" fill="#ffffff" />
+    
+    <!-- Top control panel bar -->
+    <rect x="0" y="0" width="340" height="76" rx="36" fill="#f1f5f9" />
+    <rect x="0" y="44" width="340" height="32" fill="#f1f5f9" />
+    
+    <!-- Controls: Digital display & dial -->
+    <rect x="36" y="24" width="70" height="28" rx="6" fill="#0f172a" />
+    <text x="71" y="43" fill="#38bdf8" font-family="system-ui, sans-serif" font-weight="700" font-size="14" text-anchor="middle">FLASH</text>
+    
+    <!-- Knob -->
+    <circle cx="170" cy="38" r="16" fill="#cbd5e1" stroke="#94a3b8" stroke-width="3" />
+    <circle cx="170" cy="38" r="6" fill="#0284c7" />
+    <line x1="170" y1="26" x2="170" y2="34" stroke="#0284c7" stroke-width="3" stroke-linecap="round" />
+
+    <!-- Indicator LEDs -->
+    <circle cx="255" cy="38" r="6" fill="#22c55e" />
+    <circle cx="280" cy="38" r="6" fill="#38bdf8" />
+    <circle cx="305" cy="38" r="6" fill="#f59e0b" />
+
+    <!-- Washer Door Outer Ring -->
+    <circle cx="170" cy="230" r="114" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="4" />
+    <circle cx="170" cy="230" r="98" fill="url(#drumGrad)" />
+
+    <!-- Door Glass & Water Swirl -->
+    <path d="M 85 230 Q 170 270 255 230 A 85 85 0 0 1 85 230 Z" fill="#ffffff" fill-opacity="0.35" />
+    <path d="M 100 245 Q 170 290 240 245 A 70 70 0 0 1 100 245 Z" fill="#0369a1" fill-opacity="0.3" />
+
+    <!-- Washing Bubbles & Sparkles -->
+    <circle cx="140" cy="205" r="14" fill="#ffffff" fill-opacity="0.8" />
+    <circle cx="195" cy="195" r="9" fill="#ffffff" fill-opacity="0.85" />
+    <circle cx="180" cy="245" r="18" fill="#ffffff" fill-opacity="0.75" />
+    <circle cx="130" cy="250" r="10" fill="#ffffff" fill-opacity="0.6" />
+
+    <!-- Glass Reflection Highlight -->
+    <path d="M 120 160 A 80 80 0 0 1 220 160" stroke="#ffffff" stroke-width="6" stroke-linecap="round" fill="none" opacity="0.6" />
+  </g>
+
+  <!-- Flash Sparkle accent outside machine -->
+  <path d="M 410 80 Q 425 110 455 125 Q 425 140 410 170 Q 395 140 365 125 Q 395 110 410 80 Z" fill="#fbbf24" filter="url(#shadow)" />
+  <circle cx="450" cy="70" r="8" fill="#fde047" />
+</svg>

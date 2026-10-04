@@ -1,0 +1,20 @@
+{
+  "name": "lavaflash-inicio",
+  "private": true,
+  "version": "8.31.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node ../../scripts/dev.mjs",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 4173",
+    "dev:web-only": "vite --host 127.0.0.1 --port 5173"
+  },
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "4.3.4",
+    "vite": "6.1.0"
+  }
+}
